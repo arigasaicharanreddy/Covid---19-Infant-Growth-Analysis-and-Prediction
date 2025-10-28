@@ -3,13 +3,12 @@
 ---------------------------------------------------------------------------------------
 **Project Overview**
 
-This project focuses on building machine learning models to predict infant developmental outcomes based on features such as age, height, weight, speech scores, and period.
-It demonstrates an end-to-end ML pipeline, from preprocessing to deployment using Flask + ngrok.
+The COVID-19 pandemic introduced unprecedented changes to social interactions, healthcare access, and daily routines, potentially impacting early childhood development. This project addresses the critical need to understand and classify how different pandemic periods may have influenced infant developmental trajectories. By analyzing comprehensive infant development data, we've built robust machine learning models that can accurately identify the developmental period based on key growth and milestone metrics.
 
 -----------------------------------------------------------------------------------------------------------
 **Objectives**
 
-Achieve ~100% validation accuracy on infant development classification
+Achieve ~99% accuracy on infant development classification
 
 Deploy a Flask web application for real-time predictions
 
@@ -35,15 +34,15 @@ LabelEncoder → applied for target labels & categorical features
 
 XGBClassifier (~98.7% accuracy)
 
-TabPFNClassifier (~100% accuracy, chosen for deployment)
+catboostClassifier (~99% accuracy, chosen for deployment)
 
 ----------------------------------------------------------------------------------------------------------------
 
 **Model Training & Evaluation**
 
-Trained  XGBClassifier, and TabPFNClassifier
+Trained  XGBClassifier, and catboostClassifier
 
-TabPFNClassifier achieved superior accuracy (~100%)
+catboostClassifier achieved superior accuracy (~99%)
 
 Evaluation Metrics: Accuracy, Confusion Matrix, Classification Report
 
@@ -65,7 +64,7 @@ Output: Predicted Development Status → Normal, At-Risk, or Delayed
 
 **Results**
 
-TabPFNClassifier: Accuracy ≈ 100%
+catboostClassifier: Accuracy ≈ 99%
 
 XGBClassifier: Accuracy ≈ 98.7%
 
@@ -81,7 +80,7 @@ Delayed speech → Delayed Development
 
 **Advantages**
 
-Very high accuracy (~100%)
+Very high accuracy (~99%)
 
 Minimal preprocessing required
 
